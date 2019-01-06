@@ -1,12 +1,12 @@
-2019-01-06 16:53:18 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: properties)
-2019-01-06 16:53:18 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 10:22:32) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.1.4, Platform Windows-10-10.0.17134-SP0
-2019-01-06 16:53:18 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'properties', 'CLOSESPIDER_ITEMCOUNT': '90', 'LOG_FILE': 'spider.log', 'NEWSPIDER_MODULE': 'properties.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['properties.spiders']}
-2019-01-06 16:53:19 [scrapy.middleware] INFO: Enabled extensions:
+2019-01-06 17:50:38 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: properties)
+2019-01-06 17:50:38 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 10:22:32) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.0.2p  14 Aug 2018), cryptography 2.1.4, Platform Windows-10-10.0.17134-SP0
+2019-01-06 17:50:38 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'properties', 'CLOSESPIDER_PAGECOUNT': '4', 'LOG_FILE': 'spider.log', 'NEWSPIDER_MODULE': 'properties.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['properties.spiders']}
+2019-01-06 17:50:38 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.closespider.CloseSpider',
  'scrapy.extensions.logstats.LogStats']
-2019-01-06 16:53:19 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2019-01-06 17:50:38 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
  'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
@@ -19,32 +19,22 @@
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2019-01-06 16:53:19 [scrapy.middleware] INFO: Enabled spider middlewares:
+2019-01-06 17:50:38 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2019-01-06 16:53:19 [scrapy.middleware] INFO: Enabled item pipelines:
+2019-01-06 17:50:38 [scrapy.middleware] INFO: Enabled item pipelines:
 []
-2019-01-06 16:53:19 [scrapy.core.engine] INFO: Spider opened
-2019-01-06 16:53:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2019-01-06 16:53:19 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
-2019-01-06 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/robots.txt> (referer: None)
-2019-01-06 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/static/> (referer: None)
-2019-01-06 16:53:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 192.168.56.1
-2019-01-06 16:53:19 [urllib3.connectionpool] DEBUG: http://192.168.56.1:9312 "GET /properties/api.json HTTP/1.1" 200 None
-2019-01-06 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000000.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000026.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000029.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000024.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000028.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000027.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000025.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000023.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000000.html>
+2019-01-06 17:50:38 [scrapy.core.engine] INFO: Spider opened
+2019-01-06 17:50:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-01-06 17:50:38 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-01-06 17:50:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/robots.txt> (referer: None)
+2019-01-06 17:50:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/index_00000.html> (referer: None)
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
 {'address': ['West Hampstead, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 19966)],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 91387)],
  'description': ['bakerloo single they glazed sized fittings angel air '
                  'cupboard high excellent fulham offer are serviced hour '
                  'universities into environment students direct gated and'],
@@ -52,82 +42,279 @@
  'price': [715.0],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Bermondsey Ec Kennington Drive Acton Seven Rm'],
+ 'spider': ['fast'],
+ 'title': ['Bermondsey Ec Kennington Drive Acton Seven Rm'],
  'url': ['http://192.168.56.1:9312/properties/property_000000.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000026.html>
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
 {'address': ['Angel, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 35637)],
- 'description': ['own space boasts regents environment speak block including '
-                 'additional electric year flats northern if overground rear '
-                 'town admin vat'],
- 'image_urls': ['http://192.168.56.1:9312/images/i00.jpg'],
- 'price': [621.36],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 101988)],
+ 'description': ['equipped everyone itself'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i06.jpg'],
+ 'price': [707.0],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Rentals V Brilliant Force Broadway Knightsbridge'],
- 'url': ['http://192.168.56.1:9312/properties/property_000026.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000024.html>
-{'address': ['Bayswater, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 39455)],
- 'description': ['painted estates may lots finchley food euston vibrant'],
- 'image_urls': ['http://192.168.56.1:9312/images/i08.jpg'],
- 'price': [1290.0],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Just Rail Working Units White Dogs'],
- 'url': ['http://192.168.56.1:9312/properties/property_000024.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000029.html>
-{'address': ['Bethnal Green, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 42381)],
- 'description': ['kings away canada way shadwell well life refurbished'],
- 'image_urls': ['http://192.168.56.1:9312/images/i10.jpg'],
- 'price': [653.94],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Mary Conversion Borders Eastham With Gas'],
- 'url': ['http://192.168.56.1:9312/properties/property_000029.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000028.html>
-{'address': ['Battersea, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 45310)],
- 'description': ['hall via you extra'],
+ 'spider': ['fast'],
+ 'title': ['Own N Top Westminster Residential Electric Click'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000001.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Tower Bridge, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 109795)],
+ 'description': ['bright hoxton dss monthly sw wardrobes windows croydon '
+                 'jubilee virgin fulham ideally find'],
  'image_urls': ['http://192.168.56.1:9312/images/i07.jpg'],
- 'price': [1298.0],
+ 'price': [722.2],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Rear Are Croydon Mews Georgian Amazing'],
- 'url': ['http://192.168.56.1:9312/properties/property_000028.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000027.html>
-{'address': ['Angel, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 47263)],
- 'description': ['i basis inclusive underground use doors rail lift make hello '
-                 'regents guy bar been well spanish pw regents ham working'],
- 'image_urls': ['http://192.168.56.1:9312/images/i02.jpg'],
- 'price': [708.1],
+ 'spider': ['fast'],
+ 'title': ['Chiswick Exceptionally Sq Basement Been Studios Baker'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000002.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Canary Wharf, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 117604)],
+ 'description': ['famous rear info near before free tenants old hour not '
+                 'across before m sitting standard july leyton near you '
+                 'seperate value'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i12.jpg'],
+ 'price': [1099.28],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Impressive Asap Jacuzzi Grove Waterloo Kennington'],
- 'url': ['http://192.168.56.1:9312/properties/property_000027.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000025.html>
-{'address': ['Seven Sisters, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 51506)],
- 'description': ['tfl site routes delighted luxury dishwasher floor doors '
-                 'currently terms out sainsbury look property'],
+ 'spider': ['fast'],
+ 'title': ['L Fun Broadband Clean People Brompton European'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000003.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Whitechapel, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 123455)],
+ 'description': ['place benefits cons friends store museum charge dss both '
+                 'bridge rental single huge lot chest canary laundry stunning'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i04.jpg'],
+ 'price': [1036.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Very Hse Shared Massive Really Will C'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000004.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Chelsea, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 127599)],
+ 'description': ['end richmond you shared big t wonderful'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i16.jpg'],
+ 'price': [819.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Call Ref Upper Westfield Size Hill Sudbury'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000005.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Hackney, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 132239)],
+ 'description': ['cons study t mobile june too phone four nw numerous ceiling'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i16.jpg'],
+ 'price': [1275.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['From Amenities Harlesden Plan Wembley Muswell Flatshare'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000006.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Stratford, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 136143)],
+ 'description': ['for located front business gym enquiries glazing long '
+                 'canning master mod hammersmith no so contract shopping '
+                 'ceilings hob center speed'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i04.jpg'],
+ 'price': [810.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Sloane Cosy Avenue'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000007.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Canary Wharf, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 140141)],
+ 'description': ['takes leading finished other over lane hesitate contact gov '
+                 'services painted move decorated gardens busy time extra do '
+                 'looking every deposit pretty amenities'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i05.jpg'],
+ 'price': [775.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Sydenham Designed Palace'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000008.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Chiswick, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 144927)],
+ 'description': ['right some storage public bbq bills'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i03.jpg'],
+ 'price': [980.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Regent Ub Which'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000009.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Highbury, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 148831)],
+ 'description': ['situated one here welcome set finchley amazing is nw in '
+                 'baker more hospital clean it while'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i00.jpg'],
+ 'price': [722.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Admin Attractive Crouch'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000010.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Notting Hill, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 151815)],
+ 'description': ['elephant follow boasting all perfect send corner whole '
+                 'coming borough broadband walk ready months near present '
+                 'currently move sociable king length'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i13.jpg'],
+ 'price': [852.39],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Lancaster Fast Westfields'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000011.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Brixton, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 154685)],
+ 'description': ['rental river lots following cost my include serviced freezer '
+                 'opportunity secure imperial non italian if baker cleaner '
+                 'bedrooms white guy moments heart apartments connected prime'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i03.jpg'],
+ 'price': [1277.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Extremely Shop Balcony'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000012.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Greenwich, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 157612)],
+ 'description': ['wardrobes wc pounds set glazed washing short current'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i09.jpg'],
+ 'price': [687.72],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Be Westfield Portobello'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000013.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Canary Wharf, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 159564)],
+ 'description': ['connected description lounge would immaculate laundry routes '
+                 'opportunity self condition e which zone light professional'],
  'image_urls': ['http://192.168.56.1:9312/images/i14.jpg'],
- 'price': [1167.6],
+ 'price': [787.0],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Spacious Westferry Manor London Receptions Wembley'],
- 'url': ['http://192.168.56.1:9312/properties/property_000025.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000023.html>
+ 'spider': ['fast'],
+ 'title': ['Seen Shoreditch Magnificent'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000014.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Battersea, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 161586)],
+ 'description': ['ilford ready national convenient marble power onto interior '
+                 'system get business very speak immediately agent charges '
+                 'provides kilburn both bar chiswick benefit co having'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i11.jpg'],
+ 'price': [1166.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['John Weekly Minute'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000015.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['South Kensington, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 163468)],
+ 'description': ['go sharing screen name thanks asap gbp right my be purpose '
+                 'every rates letting through converted friends la check team '
+                 'table upper register'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i05.jpg'],
+ 'price': [719.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Crouch Plasma Ideally'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000016.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Camden, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 165420)],
+ 'description': ['not market my'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i10.jpg'],
+ 'price': [847.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Out Quite Big'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000017.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Wimbledon, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 167372)],
+ 'description': ['oak carpet universities licence shops bedroom trendy '
+                 'residential style months dining professionals during estates '
+                 'designed restaurant call virgin newington west'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i07.jpg'],
+ 'price': [962.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Extra College Paddington Brick Furnished Canning'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000018.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['West Hampstead, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 169502)],
+ 'description': ['finsbury don restaurant the newington oxford friends thank '
+                 'canning toaster swimming further internet shadwell girls '
+                 'house away some'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i12.jpg'],
+ 'price': [1143.04],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Super Prime George Immediately V Conversion'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000019.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['West Hampstead, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 171276)],
+ 'description': ['table this hot bridge currently stunning conveniently '
+                 'piccadilly friendly'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i03.jpg'],
+ 'price': [1181.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Flatshare Hounslow Forest Shadwell Direct Low'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000020.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Elephant And Castle, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 173228)],
+ 'description': ['street description need cctv variety are attractions own '
+                 'corner once back which site inc links'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i02.jpg'],
+ 'price': [811.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Concierge Transport Seconds Ha Bayswater Shepherds'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000021.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Angel, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 175179)],
+ 'description': ['supermarket main your needed girls part will renovated '
+                 'toilets pubs shepherds more number'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i14.jpg'],
+ 'price': [1101.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['By Min Stratford Uxbridge Ready Mary'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000022.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
 {'address': ['Heathrow, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 53160)],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 176156)],
  'description': ['lines central tenancy your bathrooms hill length newly '
                  'drawer be moving bedside shop friendly place fulham train '
                  'couples se shower high through several popular bath move co '
@@ -136,316 +323,833 @@
  'price': [1088.0],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Min Moorgate Set Little For Small'],
+ 'spider': ['fast'],
+ 'title': ['Min Moorgate Set Little For Small'],
  'url': ['http://192.168.56.1:9312/properties/property_000023.html']}
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000022.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000021.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000020.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000015.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000019.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000018.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000017.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000016.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000022.html>
-{'address': ['Angel, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 285437)],
- 'description': ['supermarket main your needed girls part will renovated '
-                 'toilets pubs shepherds more number'],
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Bayswater, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 178108)],
+ 'description': ['painted estates may lots finchley food euston vibrant'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i08.jpg'],
+ 'price': [1290.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Just Rail Working Units White Dogs'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000024.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Seven Sisters, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 180059)],
+ 'description': ['tfl site routes delighted luxury dishwasher floor doors '
+                 'currently terms out sainsbury look property'],
  'image_urls': ['http://192.168.56.1:9312/images/i14.jpg'],
+ 'price': [1167.6],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Spacious Westferry Manor London Receptions Wembley'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000025.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Angel, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 182012)],
+ 'description': ['own space boasts regents environment speak block including '
+                 'additional electric year flats northern if overground rear '
+                 'town admin vat'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i00.jpg'],
+ 'price': [621.36],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Rentals V Brilliant Force Broadway Knightsbridge'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000026.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Angel, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 183964)],
+ 'description': ['i basis inclusive underground use doors rail lift make hello '
+                 'regents guy bar been well spanish pw regents ham working'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i02.jpg'],
+ 'price': [708.1],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Impressive Asap Jacuzzi Grove Waterloo Kennington'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000027.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Battersea, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 185916)],
+ 'description': ['hall via you extra'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i07.jpg'],
+ 'price': [1298.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Rear Are Croydon Mews Georgian Amazing'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000028.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00000.html>
+{'address': ['Bethnal Green, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 186892)],
+ 'description': ['kings away canada way shadwell well life refurbished'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i10.jpg'],
+ 'price': [653.94],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Mary Conversion Borders Eastham With Gas'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000029.html']}
+2019-01-06 17:50:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/index_00001.html> (referer: http://192.168.56.1:9312/properties/index_00000.html)
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Canary Wharf, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 494005)],
+ 'description': ['utilities basis de take aspx massive working needed baker '
+                 'rates description provided breakfast site virtual pay '
+                 'dishwasher details sharing tfl ad attractions possible give'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i06.jpg'],
+ 'price': [1030.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Dble Wanstead Included Our Flooring Kensington Suit Reception '
+           'Poplar'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000030.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Islington, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 499292)],
+ 'description': ['fridge benefit life proximity tenant'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i07.jpg'],
  'price': [1101.0],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better By Min Stratford Uxbridge Ready Mary'],
- 'url': ['http://192.168.56.1:9312/properties/property_000022.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000021.html>
-{'address': ['Elephant And Castle, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 306907)],
- 'description': ['street description need cctv variety are attractions own '
-                 'corner once back which site inc links'],
- 'image_urls': ['http://192.168.56.1:9312/images/i02.jpg'],
- 'price': [811.0],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Concierge Transport Seconds Ha Bayswater Shepherds'],
- 'url': ['http://192.168.56.1:9312/properties/property_000021.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000020.html>
-{'address': ['West Hampstead, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 308859)],
- 'description': ['table this hot bridge currently stunning conveniently '
-                 'piccadilly friendly'],
- 'image_urls': ['http://192.168.56.1:9312/images/i03.jpg'],
- 'price': [1181.0],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Flatshare Hounslow Forest Shadwell Direct Low'],
- 'url': ['http://192.168.56.1:9312/properties/property_000020.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000015.html>
-{'address': ['Battersea, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 312768)],
- 'description': ['ilford ready national convenient marble power onto interior '
-                 'system get business very speak immediately agent charges '
-                 'provides kilburn both bar chiswick benefit co having'],
- 'image_urls': ['http://192.168.56.1:9312/images/i11.jpg'],
- 'price': [1166.0],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better John Weekly Minute'],
- 'url': ['http://192.168.56.1:9312/properties/property_000015.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000019.html>
-{'address': ['West Hampstead, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 316638)],
- 'description': ['finsbury don restaurant the newington oxford friends thank '
-                 'canning toaster swimming further internet shadwell girls '
-                 'house away some'],
- 'image_urls': ['http://192.168.56.1:9312/images/i12.jpg'],
- 'price': [1143.04],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Super Prime George Immediately V Conversion'],
- 'url': ['http://192.168.56.1:9312/properties/property_000019.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000018.html>
-{'address': ['Wimbledon, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 318591)],
- 'description': ['oak carpet universities licence shops bedroom trendy '
-                 'residential style months dining professionals during estates '
-                 'designed restaurant call virgin newington west'],
- 'image_urls': ['http://192.168.56.1:9312/images/i07.jpg'],
- 'price': [962.0],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Extra College Paddington Brick Furnished Canning'],
- 'url': ['http://192.168.56.1:9312/properties/property_000018.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000017.html>
-{'address': ['Camden, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 321575)],
- 'description': ['not market my'],
- 'image_urls': ['http://192.168.56.1:9312/images/i10.jpg'],
- 'price': [847.0],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Out Quite Big'],
- 'url': ['http://192.168.56.1:9312/properties/property_000017.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000016.html>
-{'address': ['South Kensington, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 322525)],
- 'description': ['go sharing screen name thanks asap gbp right my be purpose '
-                 'every rates letting through converted friends la check team '
-                 'table upper register'],
- 'image_urls': ['http://192.168.56.1:9312/images/i05.jpg'],
- 'price': [719.0],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Crouch Plasma Ideally'],
- 'url': ['http://192.168.56.1:9312/properties/property_000016.html']}
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000014.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000013.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000011.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000012.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000010.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000009.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000008.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000007.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000014.html>
-{'address': ['Canary Wharf, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 550906)],
- 'description': ['connected description lounge would immaculate laundry routes '
-                 'opportunity self condition e which zone light professional'],
- 'image_urls': ['http://192.168.56.1:9312/images/i14.jpg'],
- 'price': [787.0],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Seen Shoreditch Magnificent'],
- 'url': ['http://192.168.56.1:9312/properties/property_000014.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000013.html>
-{'address': ['Greenwich, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 569421)],
- 'description': ['wardrobes wc pounds set glazed washing short current'],
- 'image_urls': ['http://192.168.56.1:9312/images/i09.jpg'],
- 'price': [687.72],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Be Westfield Portobello'],
- 'url': ['http://192.168.56.1:9312/properties/property_000013.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000011.html>
-{'address': ['Notting Hill, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 574748)],
- 'description': ['elephant follow boasting all perfect send corner whole '
-                 'coming borough broadband walk ready months near present '
-                 'currently move sociable king length'],
- 'image_urls': ['http://192.168.56.1:9312/images/i13.jpg'],
- 'price': [852.39],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Lancaster Fast Westfields'],
- 'url': ['http://192.168.56.1:9312/properties/property_000011.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000012.html>
-{'address': ['Brixton, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 577248)],
- 'description': ['rental river lots following cost my include serviced freezer '
-                 'opportunity secure imperial non italian if baker cleaner '
-                 'bedrooms white guy moments heart apartments connected prime'],
- 'image_urls': ['http://192.168.56.1:9312/images/i03.jpg'],
- 'price': [1277.0],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Extremely Shop Balcony'],
- 'url': ['http://192.168.56.1:9312/properties/property_000012.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000010.html>
-{'address': ['Highbury, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 580157)],
- 'description': ['situated one here welcome set finchley amazing is nw in '
-                 'baker more hospital clean it while'],
+ 'spider': ['fast'],
+ 'title': ['Y Raised Tesco Magnificent Third Kent Exceptionally Per Kentish'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000031.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Kings Cross, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 506766)],
+ 'description': ['common price laminated weekly easy re overground machine '
+                 'soon cost'],
  'image_urls': ['http://192.168.56.1:9312/images/i00.jpg'],
- 'price': [722.0],
+ 'price': [736.0],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Admin Attractive Crouch'],
- 'url': ['http://192.168.56.1:9312/properties/property_000010.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000009.html>
-{'address': ['Chiswick, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 582322)],
- 'description': ['right some storage public bbq bills'],
- 'image_urls': ['http://192.168.56.1:9312/images/i03.jpg'],
- 'price': [980.0],
+ 'spider': ['fast'],
+ 'title': ['Bedroomed Muslim Some Road Spec Open Oxford Showroom Regents'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000032.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Islington, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 514501)],
+ 'description': ['happy know end go phone speed pubs spec these kensington '
+                 'swimming advance name la standard'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i09.jpg'],
+ 'price': [891.0],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Regent Ub Which'],
- 'url': ['http://192.168.56.1:9312/properties/property_000009.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000008.html>
+ 'spider': ['fast'],
+ 'title': ['Not Look Off Line Northolt Excel Facing Neasden Book'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000033.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Kensington, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 521333)],
+ 'description': ['the landlord throw supermarkets bathrooms houses avenue '
+                 'laminated storage your here village cinema room day www fees '
+                 'opposite'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i11.jpg'],
+ 'price': [1100.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Doble Easy Aussie Shop Transport Bromley D Riverside Than'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000034.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
 {'address': ['Canary Wharf, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 584061)],
- 'description': ['takes leading finished other over lane hesitate contact gov '
-                 'services painted move decorated gardens busy time extra do '
-                 'looking every deposit pretty amenities'],
- 'image_urls': ['http://192.168.56.1:9312/images/i05.jpg'],
- 'price': [775.0],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Sydenham Designed Palace'],
- 'url': ['http://192.168.56.1:9312/properties/property_000008.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000007.html>
-{'address': ['Stratford, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 587965)],
- 'description': ['for located front business gym enquiries glazing long '
-                 'canning master mod hammersmith no so contract shopping '
-                 'ceilings hob center speed'],
- 'image_urls': ['http://192.168.56.1:9312/images/i04.jpg'],
- 'price': [810.0],
- 'project': ['properties'],
- 'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Sloane Cosy Avenue'],
- 'url': ['http://192.168.56.1:9312/properties/property_000007.html']}
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000006.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000005.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000004.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000003.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000002.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/property_000001.html> (referer: http://192.168.56.1:9312/static/)
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000006.html>
-{'address': ['Hackney, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 816364)],
- 'description': ['cons study t mobile june too phone four nw numerous ceiling'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 526213)],
+ 'description': ['viewings much plus total'],
  'image_urls': ['http://192.168.56.1:9312/images/i16.jpg'],
- 'price': [1275.0],
+ 'price': [1050.9],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better From Amenities Harlesden Plan Wembley Muswell Flatshare'],
- 'url': ['http://192.168.56.1:9312/properties/property_000006.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000005.html>
-{'address': ['Chelsea, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 837851)],
- 'description': ['end richmond you shared big t wonderful'],
- 'image_urls': ['http://192.168.56.1:9312/images/i16.jpg'],
- 'price': [819.0],
+ 'spider': ['fast'],
+ 'title': ['Riverside Must To Kingston Chalk St Deal Cosy Most'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000035.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Wembley, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 531093)],
+ 'description': ['outside terrace parking links peaceful national lovely phone '
+                 'students suite warehouse h tel oven euston open'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i09.jpg'],
+ 'price': [946.0],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Call Ref Upper Westfield Size Hill Sudbury'],
- 'url': ['http://192.168.56.1:9312/properties/property_000005.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000004.html>
-{'address': ['Whitechapel, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 841726)],
- 'description': ['place benefits cons friends store museum charge dss both '
-                 'bridge rental single huge lot chest canary laundry stunning'],
- 'image_urls': ['http://192.168.56.1:9312/images/i04.jpg'],
- 'price': [1036.0],
+ 'spider': ['fast'],
+ 'title': ['Stoke So Housing Queen Db Portobello Shared Beautiful Spaces'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000036.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Notting Hill, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 535973)],
+ 'description': ['grove closest moving block ilford needs park trains '
+                 'furnished complete over river restaurant swimming safe angel '
+                 'with all next'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i15.jpg'],
+ 'price': [843.0],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Very Hse Shared Massive Really Will C'],
- 'url': ['http://192.168.56.1:9312/properties/property_000004.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000003.html>
-{'address': ['Canary Wharf, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 846606)],
- 'description': ['famous rear info near before free tenants old hour not '
-                 'across before m sitting standard july leyton near you '
-                 'seperate value'],
- 'image_urls': ['http://192.168.56.1:9312/images/i12.jpg'],
- 'price': [1099.28],
+ 'spider': ['fast'],
+ 'title': ['Studios Cutty Sudbury Neasden H Well Ucl Sainsburys Bloomsbury'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000037.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Greenwich, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 540951)],
+ 'description': ['only delighted july those english closest no attractive '
+                 'perfect what royal sharing moments utilities overground '
+                 'museum will balham agents victorian'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i02.jpg'],
+ 'price': [858.0],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better L Fun Broadband Clean People Brompton European'],
- 'url': ['http://192.168.56.1:9312/properties/property_000003.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000002.html>
-{'address': ['Tower Bridge, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 848604)],
- 'description': ['bright hoxton dss monthly sw wardrobes windows croydon '
-                 'jubilee virgin fulham ideally find'],
+ 'spider': ['fast'],
+ 'title': ['Houseshare Ucl Fulham Crystal Thornton Spitalfields Lane Parsons '
+           'Side'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000038.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Shepherds Bush, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 546709)],
+ 'description': ['currently utilities check'],
  'image_urls': ['http://192.168.56.1:9312/images/i07.jpg'],
- 'price': [722.2],
+ 'price': [1396.72],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Chiswick Exceptionally Sq Basement Been Studios Baker'],
- 'url': ['http://192.168.56.1:9312/properties/property_000002.html']}
-2019-01-06 16:53:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/property_000001.html>
-{'address': ['Angel, London'],
- 'date': [datetime.datetime(2019, 1, 6, 16, 53, 20, 871038)],
- 'description': ['equipped everyone itself'],
+ 'spider': ['fast'],
+ 'title': ['Mile Congrats Thames Modern I Battersea Broadband Highbury '
+           'Elegant'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000039.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Tower Hamlets, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 549637)],
+ 'description': ['provides range visit want electricity start everyone license '
+                 'tel business few power during tenants y bed landlords'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i11.jpg'],
+ 'price': [787.28],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Sharers Flats Sydenham Shoreditch Same K From T Peaceful'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000040.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Tower Bridge, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 552564)],
+ 'description': ['flats total fridge included including wandsworth where just '
+                 'furniture going conveniently private tel reference highbury '
+                 'www'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i00.jpg'],
+ 'price': [1058.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Victorian Bermondsey R Home Spa'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000041.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Chiswick, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 555492)],
+ 'description': ['facebook freezer above manned guy italian message estates '
+                 'telephone of underground lovely sharing carpeted opposite '
+                 'separate sought wandsworth excellent non screen night '
+                 'housemates shopping prime sunny'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i12.jpg'],
+ 'price': [1096.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Great Within Work Not Access'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000042.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Heathrow, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 557506)],
+ 'description': ['but size paddington wimbledon queen washing storage'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i08.jpg'],
+ 'price': [1250.37],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Couple Walk Pcm Regents Covent'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000043.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Hackney, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 561394)],
+ 'description': ['h tenant service agents variety purpose patio roof north '
+                 'mary highbury streatham with'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i02.jpg'],
+ 'price': [1025.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Included Primrose Prime Overground S'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000044.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Whitechapel, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 564331)],
+ 'description': ['houses sainsbury finchley newly about ideally yourself inc '
+                 'quiet those provide drive couples numerous croydon located'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i16.jpg'],
+ 'price': [781.74],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Re Woodford Shepherd Stays Luxurious'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000045.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Bayswater, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 568180)],
+ 'description': ['college from side maida someone houses high information '
+                 'commute doors include shop require viewings diner always '
+                 'fridge transport'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i07.jpg'],
+ 'price': [756.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Fun Circus Self Rooms Side'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000046.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Whitechapel, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 571146)],
+ 'description': ['those flatmate back brixton'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i13.jpg'],
+ 'price': [842.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Morden Vauxhall Contemporary Next Friendly'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000047.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Surrey Quays, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 573060)],
+ 'description': ['shared see church of length microwave safe public direct'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i15.jpg'],
+ 'price': [1281.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Arsenal Bedsit Rotherhithe Walking Reduced'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000048.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Kensington, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 575012)],
+ 'description': ['diner studio during appliances offers pay mary bush variety '
+                 'heath walthamstow within guys lines from'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i16.jpg'],
+ 'price': [1135.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Circus Students Church Harrow Rooms'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000049.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Whitechapel, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 577939)],
+ 'description': ['anytime and built large such victorian w x contract video '
+                 'near trains students selection off next brand soon '
+                 'supermarket superb ealing leisure'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i05.jpg'],
+ 'price': [1159.48],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Middlesex Term Has Richmond Benefit'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000050.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Kensington, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 580925)],
+ 'description': ['northern availability ec heathrow lot ensuite professionals '
+                 'outside'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i16.jpg'],
+ 'price': [1090.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Contemporary Brompton West Portered Warren'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000051.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Whitechapel, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 583862)],
+ 'description': ['massive per green address ec length post central speak move '
+                 'hill features leyton place broadway c big everyone'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i03.jpg'],
+ 'price': [1188.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Kennington Isleworth Gas Russell Hill Landlord Also Young'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000052.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Camden Town, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 585941)],
+ 'description': ['amazing gym finished nearest oak jubilee tower as chest '
+                 'public could lift within finchley go docklands ring local '
+                 'trendy built quote between benefits found suitable looking d '
+                 'give'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i01.jpg'],
+ 'price': [868.14],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Porter Have Primrose Hacker Book Conversion See Mints'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000053.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Islington, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 587790)],
+ 'description': ['free connection after carpet south swimming'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i14.jpg'],
+ 'price': [1296.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Flexible Swimming Square Month Smoking Low Village Cross'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000054.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Chiswick, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 590628)],
+ 'description': ['seperate flatshare able coffee everything national '
+                 'international advance reply tenants two huge not'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i10.jpg'],
+ 'price': [1221.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Professionals Between Uxbridge Forest Concierge Plaistow Fully '
+           'Venice'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000055.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Tower Bridge, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 594534)],
+ 'description': ['days machine around floor love unfurnished see don bed '
+                 'national too stepney clapham wifi conveniently book live '
+                 'admin third sq'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i13.jpg'],
+ 'price': [1026.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Popular Roof Short Seven Marble Crystal Crouch Airport'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000056.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Bethnal Green, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 596485)],
+ 'description': ['glazing d gbp lot service first sorry night size ready town '
+                 'new brick gas green se house lot down drive power during t '
+                 'houses high court want seconds couples east make'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i00.jpg'],
+ 'price': [1246.41],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Girl Gym U Bedroomed Garden Sought Colliers Forestgate'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000057.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Camden Town, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 599532)],
+ 'description': ['get food cctv comes'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i15.jpg'],
+ 'price': [1066.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Hammersmith Near Caspian Lower Cozy Pw Over Greenwich'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000058.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00001.html>
+{'address': ['Chelsea, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 601364)],
+ 'description': ['needs table market follow loads x d arranged finchley white'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i13.jpg'],
+ 'price': [1144.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Moments Star Ideal Yard Come Enfield Goodmayes Ladies'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000059.html']}
+2019-01-06 17:50:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://192.168.56.1:9312/properties/index_00002.html> (referer: http://192.168.56.1:9312/properties/index_00001.html)
+2019-01-06 17:50:39 [scrapy.core.engine] INFO: Closing spider (closespider_pagecount)
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Chelsea, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 899081)],
+ 'description': ['environment chair garage thank sociable leyton business hot '
+                 'yourself close piece minimum will connections'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i00.jpg'],
+ 'price': [1475.6],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Scrapy Come Ready Used Underground Female X Barnet'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000060.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Camden, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 902984)],
+ 'description': ['cafes whole open but stunning shepherds toilet full cleaning '
+                 'water recommended stunning rates car international from '
+                 'development well residential set'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i09.jpg'],
+ 'price': [1230.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Mins Palace Rooms Th Sized Bank Watford Wapping'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000061.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Wembley, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 906856)],
+ 'description': ['rail all license gbp look white'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i09.jpg'],
+ 'price': [1252.4],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Bedrooms Not Stepney Ham Take Couples Angel Hounslow'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000062.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Bayswater, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 910831)],
+ 'description': ['male towards them before equipped must next gbp'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i15.jpg'],
+ 'price': [982.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Studio Superb Sqft Baker'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000063.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Bayswater, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 913783)],
+ 'description': ['hot pm suitable here late split quote washing en w bills '
+                 'banks etc flat beds bar borough appliances piece de master '
+                 'near comfortable always'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i02.jpg'],
+ 'price': [1298.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Highly Stunning Hammersmith Up'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000064.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Seven Sisters, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 917624)],
+ 'description': ['contact eat offer suitable http together july aldgate '
+                 'several students kitchenette plenty delighted let road '
+                 'licence unfurnished selection off any heating entry broadway '
+                 'finished immediately hours drawers'],
  'image_urls': ['http://192.168.56.1:9312/images/i06.jpg'],
- 'price': [707.0],
+ 'price': [827.0],
  'project': ['properties'],
  'server': ['DESKTOP-9LLQJBD'],
- 'spider': ['api'],
- 'title': ['Better Own N Top Westminster Residential Electric Click'],
- 'url': ['http://192.168.56.1:9312/properties/property_000001.html']}
-2019-01-06 16:53:20 [scrapy.core.engine] INFO: Closing spider (finished)
-2019-01-06 16:53:20 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 8989,
- 'downloader/request_count': 32,
- 'downloader/request_method_count/GET': 32,
- 'downloader/response_bytes': 22661,
- 'downloader/response_count': 32,
- 'downloader/response_status_count/200': 32,
- 'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2019, 1, 6, 8, 53, 20, 877059),
- 'item_scraped_count': 30,
- 'log_count/DEBUG': 65,
+ 'spider': ['fast'],
+ 'title': ['Warren Rentals Will Westminster'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000065.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Mile End, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 921597)],
+ 'description': ['kitchenette parking baker connected north'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i00.jpg'],
+ 'price': [773.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Exceptional Want Spanish Uni'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000066.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['South Kensington, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 924421)],
+ 'description': ['outside direct super summer etc august english seconds '
+                 'recommended bathrooms our street'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i13.jpg'],
+ 'price': [1118.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Whitechaple Tufnell Council Southgate'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000067.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Elephant And Castle, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 926404)],
+ 'description': ['d creative great beds edgware wharf decor standard sainsbury '
+                 'june s ideally local greenwich possible age august their'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i05.jpg'],
+ 'price': [1048.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Wooden Wanted Designer Impressive'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000068.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Chelsea, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 929332)],
+ 'description': ['sitting freezer gbp room third total kitchenette islington '
+                 'shoreditch ready notting newington small m sitting three '
+                 'mins lovely benefits camden site terms'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i06.jpg'],
+ 'price': [756.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Canal Stepney Pm Westfield'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000069.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Stratford, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 931386)],
+ 'description': ['marylebone takes want reach bbq buses our facing'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i01.jpg'],
+ 'price': [674.1],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Camberwell With Poplar Council'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000070.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Shepherds Bush, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 934212)],
+ 'description': ['female arrange microwave would date northern st wireless '
+                 'double laminate marble share'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i10.jpg'],
+ 'price': [826.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Duplex Internet Housemates Patio'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000071.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Chiswick, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 936165)],
+ 'description': ['victoria sw local garden sought gardens support window '
+                 'forest pictures professional team price'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i04.jpg'],
+ 'price': [1261.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Offers Olympia Quiet Weeks'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000072.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Notting Hill, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 938116)],
+ 'description': ['cost ask september link transport croydon needs period '
+                 'residents us conditioning church famous range beds can power '
+                 'com less dryer split balcony bermondsey ring w'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i15.jpg'],
+ 'price': [969.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Hyde Above Crescent Smoking'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000073.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Canary Wharf, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 940070)],
+ 'description': ['toilet forward bars hammersmith at with shepherds quite '
+                 'ceilings'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i08.jpg'],
+ 'price': [1077.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['F Guy Kew Earl Work Pm Pleased'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000074.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Canary Wharf, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 942966)],
+ 'description': ['single years soon international highbury terrace trendy '
+                 'every building secure new drawer shared zone shop jubilee '
+                 'table admin depending or but all'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i01.jpg'],
+ 'price': [1060.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Open Johns Sale Weekly Earl Romford Whitechapel'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000075.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Surrey Quays, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 944916)],
+ 'description': ['food most doors enquiries uk ceiling let information first '
+                 'vibrant wifi must offers house june facilities art garage '
+                 'utilities line years university full ham way include travel '
+                 'french pool royal drawer found student porter'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i09.jpg'],
+ 'price': [900.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Kilburn Turnpike Queensway Luxury Stepney Area Ideally'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000076.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Islington, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 946901)],
+ 'description': ['south bars gov us one in bus'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i04.jpg'],
+ 'price': [891.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Gorgeous Student Couple Mints Maryland Tufnell Female'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000077.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Heathrow, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 949828)],
+ 'description': ['which kitchenette appliances sainsbury august them you '
+                 'early'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i04.jpg'],
+ 'price': [738.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Vale See Cleaner Car Offices Bow Catford'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000078.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Wimbledon, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 951824)],
+ 'description': ['flats streatham direct parking perfect ll website lounge '
+                 'supermarket level tax out minimum south beautifully from way '
+                 'miles d shopping corner reference home'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i08.jpg'],
+ 'price': [846.45],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Suite Tube Perivale Brilliant Barons Peaceful Nw'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000079.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Brixton, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 953732)],
+ 'description': ['fantastic best by website route girl fees serviced drawers '
+                 'opportunity asda some drawer top decor coffee a too victoria '
+                 'per recommended express'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i15.jpg'],
+ 'price': [1132.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Furnished Until White Go Diner Service Spectacular'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000080.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Stratford, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 955683)],
+ 'description': ['easy t views set'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i15.jpg'],
+ 'price': [726.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Shoreditch Admin Box Been Hounslow Included Bedroom'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000081.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Seven Sisters, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 958612)],
+ 'description': ['facing will laminate bermondsey converted terrace fantastic '
+                 'lots call stop central power accommodation going wonderful'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i13.jpg'],
+ 'price': [827.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['London Farm Offices For Stops Specious Hospital'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000082.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Hackney, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 960604)],
+ 'description': ['tidy original forward center brixton local rental liverpool '
+                 'video such time while district x'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i04.jpg'],
+ 'price': [932.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Earl Check Dagenham S Wharf Offices Lots'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000083.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Whitechapel, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 962516)],
+ 'description': ['newly five share library included two completely a dining '
+                 'seperate quay dinning own sainsbury balcony elephant '
+                 'internet painted plenty when sainsbury virgin commute '
+                 'immaculate miss over drawers'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i05.jpg'],
+ 'price': [1059.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Yard Semi Spaces Bow Village Chadwell Cozy'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000084.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Kensington, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 964471)],
+ 'description': ['northern must don connected website use p smoking'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i08.jpg'],
+ 'price': [1114.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Outstanding Kings Notting'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000085.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Notting Hill, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 966420)],
+ 'description': ['reception ground balham comfortable pm zone address desk '
+                 'kensington thames supermarket offered easy serviced when by'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i12.jpg'],
+ 'price': [1206.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Spaces Big Piccadilly'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000086.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Greenwich, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 968373)],
+ 'description': ['village seven town amazing drive throw maida serviced for '
+                 'sofa mb further maisonette http metropolitan by dishwasher'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i08.jpg'],
+ 'price': [1237.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Nr Wireless Sloane'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000087.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Whitechapel, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 970940)],
+ 'description': ['such art chairs chiswick pictures shop shopping great just '
+                 'clapham suitable comprises more marylebone microwave current '
+                 'little council shower'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i05.jpg'],
+ 'price': [715.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Arch Hale Train'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000088.html']}
+2019-01-06 17:50:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://192.168.56.1:9312/properties/index_00002.html>
+{'address': ['Hammersmith, London'],
+ 'date': [datetime.datetime(2019, 1, 6, 17, 50, 39, 972275)],
+ 'description': ['months weeks central'],
+ 'image_urls': ['http://192.168.56.1:9312/images/i03.jpg'],
+ 'price': [991.0],
+ 'project': ['properties'],
+ 'server': ['DESKTOP-9LLQJBD'],
+ 'spider': ['fast'],
+ 'title': ['Comfortable Bank Furn'],
+ 'url': ['http://192.168.56.1:9312/properties/property_000089.html']}
+2019-01-06 17:50:39 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1061,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 61435,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'finish_reason': 'closespider_pagecount',
+ 'finish_time': datetime.datetime(2019, 1, 6, 9, 50, 39, 974251),
+ 'item_scraped_count': 90,
+ 'log_count/DEBUG': 95,
  'log_count/INFO': 7,
- 'request_depth_max': 1,
- 'response_received_count': 32,
- 'scheduler/dequeued': 31,
- 'scheduler/dequeued/memory': 31,
- 'scheduler/enqueued': 31,
- 'scheduler/enqueued/memory': 31,
- 'start_time': datetime.datetime(2019, 1, 6, 8, 53, 19, 218640)}
-2019-01-06 16:53:20 [scrapy.core.engine] INFO: Spider closed (finished)
+ 'request_depth_max': 3,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2019, 1, 6, 9, 50, 38, 688539)}
+2019-01-06 17:50:39 [scrapy.core.engine] INFO: Spider closed (closespider_pagecount)
