@@ -8,8 +8,8 @@ from ..items import PropertiesItem
 from scrapy.loader import ItemLoader
 from scrapy.loader.processors import MapCompose, Join
 from scrapy.http import Request
-from scrapy.exceptions import CloseSpider
-import logging
+# from scrapy.exceptions import CloseSpider
+# import logging
 
 
 class BasicSpider(scrapy.Spider):
