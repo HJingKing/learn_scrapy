@@ -23,5 +23,5 @@ class DbmovieSpider(CrawlSpider):
     def parse_item(self, response):
         i = ItemLoader(item=DoubanMovieItem(), response=response)
         i.add_xpath("movie", '//*[@property="v:itemreviewed"]/text()')
-        i.add_xpath("year", '//*[@class="year"]/text()', MapCompose(lambda r: r.replace(['(', ')'], '')))
+        i.add_xpath("year", '//*[@class="year"]/text()', re='[0-9]+')
         return i.load_item()
